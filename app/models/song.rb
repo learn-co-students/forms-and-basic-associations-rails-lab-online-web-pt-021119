@@ -28,7 +28,7 @@ class Song < ActiveRecord::Base
   end
 
   def note_contents
-    self.notes.all.collect {|n| n.content}
+    self.notes.collect {|n| n.content}
   end
 
 end
